@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp:XROT,YROT@-45..45,-45..45&family=Unbounded:wght@200..900&display=swap');
 
 :root   {
-    --primary-color-text: #FFA987;
-    --primary-color-link: #E54B4B;
+    --primary-color-text: #FFca87;
+    --primary-color-link: #ffca87;
     --primary-color-bg: #1E1E1E;
     --primary-color-shadow: #000000; 
 
@@ -119,14 +119,7 @@ html, body {
 
 .logo-span  {
     display: inline-block;
-    margin: 15px 10px;
-    font-family: 'Unbounded', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    line-height: 0.8;
-    font-weight: 800;
-    font-size: 25pt;
-    text-transform: uppercase; 
+    margin: 30px 30px;
     color: var(--primary-color-link);
 }
 
@@ -143,10 +136,9 @@ html, body {
     margin: 25px;
     width: 248px;
     height: 248px;
-    border-radius: 50%;
+    border-radius: 0%;
     object-fit: cover;
     overflow: hidden; 
-    box-shadow: 0px 4px 8px black; 
 }
 
 hr  {
@@ -216,7 +208,7 @@ hr  {
     background-color: var(--primary-color-text);
     color: var(--primary-color-bg);
     font-weight: 200;
-    font-size: 12pt;
+    font-size: 18pt;
     text-transform: uppercase; 
     padding: 4px 10px 4px 10px;
     line-height: 1.2;
@@ -226,7 +218,7 @@ hr  {
 
 .card p {
     line-height: 1.2;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 100;
     padding: 0px 20px 00px 20px;
 }
@@ -290,7 +282,6 @@ hr  {
     padding-top: 8px;
     padding-bottom: 8px;
     height: 48px;
-    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.3); 
 }
 
 /*
@@ -354,7 +345,7 @@ hr  {
 
     .profile    {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 3fr;
     }
 
     .profile-image img {
@@ -362,10 +353,9 @@ hr  {
         margin: 25px;
         width: 248px;
         height: 248px;
-        border-radius: 50%;
+        border-radius: 0%;
         object-fit: cover;
         overflow: hidden; 
-        box-shadow: 0px 4px 8px black; 
     }
 
     .profile-text  {
@@ -386,6 +376,7 @@ hr  {
         justify-content: start;   
         margin-left: 26px; 
         margin-right: 26px;
+        font-size: 18px; /* Adjust font size in desktop */
     }
 
     .profile-details span   {
@@ -399,9 +390,8 @@ hr  {
         font-weight: 200;
         font-size: 26pt;
         line-height: 1.0;
-        text-transform: uppercase; 
         color: var(--primary-color-text);
-        text-shadow: 0 0 10px rgba(229, 75, 75, 0.8), 0 0 20px rgba(229, 75, 75, 0.6), 0 0 30px rgba(229, 75, 75, 0.4);
+        text-shadow: 0 0 10px rgba(255, 202, 135, 0.8), 0 0 20px rgba(255, 202, 135, 0.6), 0 0 30px rgba(255, 202, 135, 0.4);
     }
 
     .profile-details button {
@@ -419,6 +409,7 @@ hr  {
         font-weight: 800;
         font-style: normal;
         text-transform: uppercase;
+        text-decoration: none;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
         transition: all 0.2s ease;
 
@@ -432,6 +423,7 @@ hr  {
 
     .my-works.frame {
         display: none;
+        margin-top: 40px;
     }
 
     .frame  {
@@ -504,6 +496,7 @@ hr  {
         width: 443px;
         text-align: start;
         margin-left: 26px;
+        font-size: 18px;
     }
 
     .contact-form {
@@ -545,6 +538,11 @@ hr  {
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
         margin: 0px;
         margin-left: 0;
+    }
+
+    .profile-details button a {
+        text-decoration: none;
+        color: var(--primary-color-bg);
     }
 
     .contact-details {
@@ -608,11 +606,6 @@ hr  {
     }
 
     
-    
-
-
-
-
 
 
 
@@ -667,9 +660,9 @@ hr  {
     .menu-list a:hover {
         color: var(--primary-color-text); /* Keep the text color */
         transform: scale(1.05); /* Scale up on hover */
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Outer glow */
-                     0 0 20px rgba(255, 255, 255, 0.6),
-                     0 0 30px rgba(255, 255, 255, 0.4);
+        text-shadow: 0 0 10px rgba(255, 157, 0, 0.8), /* Outer glow */
+                     0 0 20px rgba(250, 121, 0, 0.6),
+                     0 0 30px rgba(255, 128, 0, 0.4);
     }
 
     .menu-list ul {
@@ -690,18 +683,18 @@ hr  {
 
     .profile    {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 3fr;
     }
 
     .profile-image img {
         display: inline-block;
         margin: 25px;
-        width: 360px;
-        height: 360px;
-        border-radius: 50%;
+        width: 280px;
+        height: 280px;
+        border-radius: 0%;
+        padding: 0px;
         object-fit: cover;
         overflow: hidden; 
-        box-shadow: 0px 4px 8px black; 
     }
 
     .profile-text  {
@@ -718,18 +711,17 @@ hr  {
 
     .profile-details span   {
         font-size: 36px;
-        width: 600px;
+        width: 640px;
         display: block;
         text-align: start;
         margin-left: 10px;  
         font-weight: 300;
         font-family: 'Unbounded', sans-serif;
         font-weight: 200;
-        font-size: 42pt;
+        font-size: 36pt;
         line-height: 1.0;
-        text-transform: uppercase; 
         color: var(--primary-color-text);
-        text-shadow: 0 0 10px rgba(229, 75, 75, 0.8), 0 0 20px rgba(229, 75, 75, 0.6), 0 0 30px rgba(229, 75, 75, 0.4);
+        text-shadow: 0 0 10px rgba(255, 202, 135, 0.8), 0 0 20px rgba(255, 202, 135, 0.6), 0 0 30px rgba(255, 202, 135, 0.4);
     }
 
     .profile-details button {
@@ -746,9 +738,16 @@ hr  {
         font-optical-sizing: auto;
         font-weight: 800;
         font-style: normal;
+        text-decoration: none;
         text-transform: uppercase;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
     }
+
+    .profile-details button a {
+        text-decoration: none;
+        color: var(--primary-color-bg);
+    }
+
 
     .frame  {
         display: none;
@@ -815,9 +814,9 @@ hr  {
         max-width: 1200px;
         margin-left: 26px;
         margin-right: 26px;
+        font-size: 24px;
 
     }
-
 
     .card   {
         width: 100%;
@@ -827,7 +826,6 @@ hr  {
         padding: 36px;
     }
 
-    
     .card h4    {
         font-size: 36px;
         margin: 0px;
@@ -849,7 +847,7 @@ hr  {
     
     .card p {
         line-height: 1.2;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 100;
         margin: 0;
         padding: 0px;
